@@ -1,18 +1,290 @@
-﻿a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿.catImage {
+    width: 25vw;
+    margin: 2vw;
+    border: 5px solid darkgrey;
 }
 
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.detailImage {
+    height: 50vh;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+p {
+    font-size: 16pt;
+    margin: 20px 50px 20px 50px;
+}
+
+.title {
+    background-color: black;
+    padding: 20px 0 20px 0;
+    margin: 0 0 0 0;
+    color: lightblue;
+}
+
+.carousel-item,
+.carousel-item.active {
+    align-items: center;
+}
+
+.d-block.w-100 {
+    height: 80vh;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+.dropzone {
+    height: 480px;
+    width: 480px;
+    border: 5px solid black;
+    background-color: darkgreen;
+    text-align: center;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navtitle {
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    /* color: rgb(136, 204, 158); */
+    color: lightgrey;
+}
+
+.UploadInputs {
+    display: flex;
+}
+
+.uploadicon {
+    width: 320px;
+    max-height: 320px;
+}
+
+.catImage {
+    max-width: 480px;
+    max-height: 480px;
+    margin: 2vw;
+    border: 4px solid darkgrey;
+}
+
+.tags {
+    display: flex;
+}
+
+.Navs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailImage {
+    height: 480px;
+}
+
+.inputtext {
+    margin: 7px;
+    text-shadow: 4px 4px 7px black;
+    padding: 0;
+}
+
+.input-group-text {
+    background-color: lightgray;
+    width: 225px;
+}
+
+h1 {
+    text-align: center;
+    color: lightgray;
+    text-shadow: 4px 4px 7px black;
+}
+
+h2 {
+    text-align: center;
+    color: lightgrey;
+    text-shadow: 4px 4px 7px black;
+    padding: 20px;
+}
+
+.carouselCont {
+    max-height: 80vh;
+}
+
+.photoview {
+    max-width: 80vw !important;
+    max-height: 60vh !important;
+}
+
+footer {
+    margin: 100px 0 0 0;
+    background-color: darkslategrey;
+}
+
+p {
+    color: white;
+    font-size: 16pt;
+    margin: 20px 50px 20px 50px;
+    padding: 25px;
+}
+
+.nameplate {
+    background-color: darkslategray;
+    color: white;
+    height: 32px;
+    width: 480px;
+    border: 3px solid darkgrey;
+}
+
+.title {
+    background-color: black;
+    padding: 20px 0 20px 0;
+    margin: 0 0 0 0;
+    color: lightgrey;
+}
+
+a:hover {
+    color: white;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.CatView {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(70, 69, 69);
+}
+
+h5 {
+    color: lightgrey;
+}
+
+.background {
+    /* background: linear-gradient(
+      rgba(194, 194, 194, 0.19),
+      rgba(209, 209, 209, 0.19)
+    ), */
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+element.style {
+    max-width: 80vw;
+    max-height: 60vh;
+}
+
+.App {
+    text-align: center;
+    min-height: 100vh;
+}
+
+.ImageContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: rgb(136, 204, 158);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: rgb(27, 85, 59);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: black;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: white;
+    /* text-shadow: 4px 4px 7px black; */
+}
+
+button {
+    float: right;
+}
+
+.w-100 {
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.bottomnav {
+    justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: white;
 }
