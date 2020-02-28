@@ -12,22 +12,20 @@ namespace Painting_website.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriesController : ControllerBase
+    public class CategoryViewController : ControllerBase
     {
         private readonly DatabaseContext _context;
 
-        public CategoriesController(DatabaseContext context)
+        public CategoryViewController(DatabaseContext context)
         {
             _context = context;
         }
 
-        // GET: api/Categories
-        [HttpGet]
-        public async Task<ActionResult<List<Picture>>> GetAll()
+        [HttpGet("{Category}")]
+        public async Task<ActionResult<List<Picture>>> Get([FromRoute] string Category)
         {
-            var results = _context.Picture
-                  .Include(i => i.Location)
-                  .Include(i => i.Tag);
+            var results = _context.Pictures.Include(i => i.Location)
+                  .Include(i => i.Tag).Where(Picture => Picture.Location.Place.ToLower() == Category.ToLower());
             return await results.ToListAsync();
         }
     }

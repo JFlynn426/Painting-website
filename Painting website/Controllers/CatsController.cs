@@ -12,23 +12,20 @@ namespace Painting_website.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriesController : ControllerBase
+    public class CatsController : ControllerBase
     {
         private readonly DatabaseContext _context;
 
-        public CategoriesController(DatabaseContext context)
+        public CatsController(DatabaseContext context)
         {
             _context = context;
         }
 
-        // GET: api/Categories
+        // GET: api/Cats
         [HttpGet]
-        public async Task<ActionResult<List<Picture>>> GetAll()
+        public async Task<ActionResult<IEnumerable<Location>>> GetAllCats()
         {
-            var results = _context.Picture
-                  .Include(i => i.Location)
-                  .Include(i => i.Tag);
-            return await results.ToListAsync();
+            return await _context.Place.ToListAsync();
         }
     }
 }
