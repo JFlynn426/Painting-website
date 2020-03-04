@@ -7,7 +7,6 @@ import PhotoView from './components/PhotoView'
 import PhotoUpload from './components/PhotoUpload'
 import Categories from './components/Category'
 import UploadLogin from './components/UploadLogin'
-import Callback from './components/Callback'
 export default class App extends Component {
     static displayName = App.name
 
@@ -20,7 +19,6 @@ export default class App extends Component {
                 <Route path="/Categories" component={Categories} />
                 <Route path="/PhotoView/:photoID" component={PhotoView} />
                 <Route exact path="/PhotoUpload" component={UploadLogin} />
-                <Route exact path="/Callback" component={Callback} />
                 <Route path="/PhotoUpload/John" component={PhotoUpload} />
             </Layout>
         )

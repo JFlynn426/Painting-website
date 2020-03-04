@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom'
 import Example from './Carousel'
 import { Nav, NavItem, NavLink } from 'reactstrap'
 import axios from 'axios'
+
 export class Home extends Component {
     static displayName = Home.name
     constructor(props) {
