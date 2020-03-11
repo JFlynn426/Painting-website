@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "axios@0.19.2",
+      "destination": "ClientApp/src/components/axios/"
+    },
+    {
+      "library": "react-dropzone@10.2.1",
+      "destination": "ClientApp/src/components/react-dropzone/"
+    },
+    {
+      "library": "react-modal@3.11.2",
+      "destination": "ClientApp/src/components/react-modal/"
+    }
+  ]
+}

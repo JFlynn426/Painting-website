@@ -1,6 +1,6 @@
 ﻿import React, { Component } from 'react'
 import ModalImage from 'react-modal-image'
-import axios from 'axios'
+import axios from './axios/axios'
 class CategoryView extends Component {
   state = {
     SpeciesName: '',

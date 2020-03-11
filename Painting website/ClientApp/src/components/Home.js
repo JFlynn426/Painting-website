@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import Example from './Carousel'
 import { Nav, NavItem, NavLink } from 'reactstrap'
-import axios from 'axios'
+import axios from './axios/axios'
 
 export class Home extends Component {
     static displayName = Home.name

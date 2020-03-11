@@ -1,8 +1,8 @@
 ﻿import React, { Component } from 'react'
 import classNames from 'classnames'
-import Dropzone from 'react-dropzone'
+import Dropzone from './react-dropzone/index'
 import uploadicon from './backgrounds/cloud-upload-1.png'
-import axios from 'axios'
+import axios from './axios/axios'
 // import { getEnabledCategories } from 'trace_events'
 
 class PhotoUpload extends Component {
