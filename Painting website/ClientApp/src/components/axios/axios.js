@@ -1,4 +1,5 @@
 /* axios v0.19.2 | (c) 2020 by Matt Zabriskie */
+/* eslint no-undef: "off"*/
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();

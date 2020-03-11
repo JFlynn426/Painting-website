@@ -13,6 +13,11 @@
     {
       "library": "react-modal@3.11.2",
       "destination": "ClientApp/src/components/react-modal/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "bootstrap@4.4.1",
+      "destination": "ClientApp/bootstrap/"
     }
   ]
 }
