@@ -18,6 +18,11 @@
       "provider": "jsdelivr",
       "library": "bootstrap@4.4.1",
       "destination": "ClientApp/bootstrap/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "bootstrap@4.4.1",
+      "destination": "ClientApp/bootstrap/"
     }
   ]
 }
